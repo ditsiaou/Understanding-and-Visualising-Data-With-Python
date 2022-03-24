@@ -1,0 +1,39 @@
+1.Using the NHANES data and the previous notebook, the following questions will be about the variable BPXSY2 (with missing values remove). 
+Round your answer to the nearest tenth. (ex: 2.33 should be 2.3, 2.15 should be 2.2)
+What is the median?
+
+122.0
+
+2.What is the mean?
+Round your answer to the nearest tenth. (ex: 2.33 should be 2.3, 2.15 should be 2.2)
+124.8
+
+3.What is the standard deviation?
+Round your answer to the nearest tenth. (ex: 2.33 should be 2.3, 2.15 should be 2.2)
+18.5
+
+4.What is the max?
+Round your answer to the nearest tenth. (ex: 2.33 should be 2.3, 2.15 should be 2.2)
+238.0
+
+5.What is the Interquartile Range (IQR)?
+Round your answer to the nearest tenth. (ex: 2.33 should be 2.3, 2.15 should be 2.2)
+22.0
+
+6. Which of these will return descriptive statistics for a numeric Series ‘s’?
+
+s.describe()
+
+7. Select all that apply: Which will produce a histogram of the numeric Series ‘s’
+( there are three correct answers)
+sns.distplot(s)
+sns.distplot(a=s).set(title="Histogram of s")
+sns.distplot(a=s)
+
+8. How many rows of the DataFrame 'df' are shown with the following code: df.head()
+
+5
+
+9. What data is shown when the following code is run? df.head(2)
+
+Rows 0 and 1
