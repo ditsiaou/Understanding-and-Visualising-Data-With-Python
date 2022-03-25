@@ -1,0 +1,50 @@
+Description of Question 1
+In the code block below, generate 3 normal random variables with mean 100 and standard deviation 1. 
+This will require about 4 lines of code. Use the functions provided in this outline.
+Import the numpy library
+Set the seed to 123 to initialize environment so random variables are replicated according to the grader. (hint: np.random.seed(?))
+Generate three random normal variables with mean 100 and standard deviation 1 and assign them to a variable named sample. (hint: sample = np.random.normal(?,?,?))
+Print the variable sample.
+The question marks in the hints indicate input parameters.
+Choose the answer that matches your result to three decimal places.
+Reference Documentation
+https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.random.seed.html
+https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.random.normal.html
+
+Solution of Question 1
+import numpy as np
+np.random.seed(123)
+sample=[]
+for i in range(3):
+    a=np.random.normal(100,1)
+    sample.append(a)
+#sample=[np.random.normal(100,1)]
+print(sample)
+
+Output: 
+98.914  100.997  100.283
+
+
+Description of Question 2
+Generating random samples from a population lies at the heart of statistics. In the code block below, draw a sample of size 10 from a set containing the integers 1 through 100.
+This will require about 5 lines of code. Use the functions provided in this outline.  
+Import the numpy library
+Set the seed to 123 to initialize environment so random variables are replicated according to the grader. (hint: np.random.seed(?))
+Create a vector called population, and put the numbers 1-100 into the population list. (hint: np.arange(?,?))
+Generate a sample with length 10 from the population. (hint: sample = np.random.choice(?, ?)) and assign the output to a variable named sample.
+Print the variable sample.
+The question marks in the hints above indicate input parameters.
+Reference Documentation
+https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.random.seed.html
+https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.arange.html
+https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.random.choice.html
+
+Solution of Question 2
+import numpy as np
+np.random.seed(123)
+population= np.arange(1,101,1)
+sample=np.random.choice(population,10)
+print(sample)
+
+Output:
+67 93 99 18 84 58 87 98 97 48
